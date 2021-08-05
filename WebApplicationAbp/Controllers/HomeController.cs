@@ -1,15 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
 
 namespace WebApplicationAbp.Controllers
 {
-    [Microsoft.AspNetCore.Components.Route("[Controller]")]
-    public class HomeController:AbpController
+    [Route("[controller]")]
+    public class HomeController : AbpController
     {
-        [HttpGet]
-        public IActionResult Index()
+        [HttpGet("{user}")]
+        public IActionResult Index(string user)
         {
-            return Content("Hello world");
+            
+            return Content(user);
         }
     }
 }
