@@ -3,5 +3,7 @@
 ################################################################################
 
 /.vs/AbpTest
-/HelloAbp/bin/Debug/netcoreapp3.1
+/HelloAbp/bin/
 /HelloAbp/obj
+/WebApplicationAbp/obj
+/WebApplicationAbp/bin

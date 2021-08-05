@@ -13,6 +13,8 @@ namespace HelloAbp
 
             var service = app.ServiceProvider.GetService<HelloService>();
             service.Run();
+
+            Console.ReadKey();
         }
     }
 }
